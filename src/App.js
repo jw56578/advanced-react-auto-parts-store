@@ -7,51 +7,35 @@ import TopNav from './components/TopNav';
 import ImageSlider from './components/ImageSlider';
 import Footer from './components/Footer';
 import ProductDetail from './components/ProductDetail';
+import Contact from './components/Contact';
+import Products from './components/Products';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-				<div className="wrap">
-					<div className="header">
-					<Header />
-					<div className="clear"> </div>
-					<SubHeader />
-					<div className="clear"> </div>
-					<TopNav />
+function App(props) {
+	var content  = "";
+	if(props.view === "contact"){
+		content = <Contact />;
+	}
+	else{
+		content = 	<div><ImageSlider /><Products /></div>;
+	}
+	return (
+		<div className="App">
+			<div className="wrap">
+				<div className="header">
+				<Header />
+				<div className="clear"> </div>
+				<SubHeader />
+				<div className="clear"> </div>
+				<TopNav changeView={props.changeView} />
 				</div>
-				<ImageSlider />
 				<div className="content">
-					<div className="products-box">
-					<div className="products">
-						<h5><span>FEATURED</span> PRODUCTS</h5>
-						<div className="section group">
-							<ProductDetail />
-							<ProductDetail />
-							<ProductDetail />
-							<ProductDetail />
-							<ProductDetail />
-						</div>
-					</div>
-					<div className="products products-secondbox">
-						<h5><span>Our</span> Specials</h5>
-						<div className="section group">
-							<ProductDetail />
-							<ProductDetail />
-							<ProductDetail />
-							<ProductDetail />
-							<ProductDetail />
-						</div>
-					</div>
-				</div>
+					{content}
 				</div>
 				<div className="clear"> 
 				</div>
-				</div>
-				<Footer />
-      </div>
-    );
-  }
+			</div>
+			<Footer />
+		</div>
+	);
 }
-
 export default App;

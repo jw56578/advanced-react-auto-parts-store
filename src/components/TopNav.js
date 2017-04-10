@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-function SubHeader(){
+function SubHeader(props){
   return(
     	<div className="top-nav">
 				<ul>
@@ -9,7 +9,12 @@ function SubHeader(){
 					<li><a href="carbumpers.html">car bumpers</a></li>
 					<li><a href="caradsystem.html">car audiosystem</a></li>
 					<li><a href="truckbumpers.html">Truck bumpers</a></li>
-					<li><a href="contact.html">Feedback</a></li>
+					<li><a href="#" onClick={
+						(e)=>{
+							e.preventDefault();
+							props.changeView('contact')
+						}
+						}>Feedback</a></li>
 					<div className="clear"> </div>
 				</ul>
 			</div>
