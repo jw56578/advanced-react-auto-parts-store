@@ -11,7 +11,8 @@ function SubHeader(props){
 					<li><a href="truckbumpers.html">Truck bumpers</a></li>
 					<li><a href="#" onClick={
 						(e)=>{
-							e.preventDefault();
+							e.stopPropagation();
+              e.nativeEvent.stopImmediatePropagation();
 							props.changeView('contact')
 						}
 						}>Feedback</a></li>

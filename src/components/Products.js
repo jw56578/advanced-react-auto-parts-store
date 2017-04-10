@@ -22,6 +22,9 @@ function SubHeader(){
 							<ProductDetail />
 							<ProductDetail />
 							<ProductDetail />
+              <ProductDetail />
+							<ProductDetail />
+							<ProductDetail />
 						</div>
 					</div>
 				</div>
