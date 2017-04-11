@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link,Router } from 'react-router-dom'
+
 
 function SubHeader(props){
   return(
@@ -9,13 +11,9 @@ function SubHeader(props){
 					<li><a href="carbumpers.html">car bumpers</a></li>
 					<li><a href="caradsystem.html">car audiosystem</a></li>
 					<li><a href="truckbumpers.html">Truck bumpers</a></li>
-					<li><a href="#" onClick={
-						(e)=>{
-							e.stopPropagation();
-              e.nativeEvent.stopImmediatePropagation();
-							props.changeView('contact')
-						}
-						}>Feedback</a></li>
+					<li>
+						<Link to="/contact">Feedback</Link>
+					</li>     
 					<div className="clear"> </div>
 				</ul>
 			</div>

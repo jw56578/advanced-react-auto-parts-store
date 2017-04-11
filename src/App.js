@@ -9,32 +9,44 @@ import Footer from './components/Footer';
 import ProductDetail from './components/ProductDetail';
 import Contact from './components/Contact';
 import Products from './components/Products';
+import  Home from './components/Home';
+
+import {
+  BrowserRouter,
+  Route,
+  Link,
+	Switch
+} from 'react-router-dom'
 
 function App(props) {
 	var content  = "";
-	if(props.view === "contact"){
-		content = <Contact />;
-	}
-	else{
-		content = 	<div><ImageSlider /><Products /></div>;
-	}
+	content = 	<div><ImageSlider /><Products /></div>;
 	return (
 		<div className="App">
-			<div className="wrap">
-				<div className="header">
-				<Header />
-				<div className="clear"> </div>
-				<SubHeader />
-				<div className="clear"> </div>
-				<TopNav changeView={props.changeView} />
+	    <BrowserRouter>
+				<div className="wrap">
+					<div className="header">
+					<Header />
+					<div className="clear"> </div>
+					<SubHeader />
+					<div className="clear"> </div>
+					<TopNav changeView={props.changeView} />
+					</div>
+					<div className="content">
+							<div>
+								<Switch>
+									<Route exact path="/" component={Home}/>
+									<Route path="/contact" component={Contact}/>
+									<Route render={() => <h2>Not Found!</h2>} />
+								</Switch>
+							</div>
+					</div>
+					<div className="clear"> 
+					</div>
+						<Footer />
 				</div>
-				<div className="content">
-					{content}
-				</div>
-				<div className="clear"> 
-				</div>
-			</div>
-			<Footer />
+			
+			</BrowserRouter>
 		</div>
 	);
 }
