@@ -5,7 +5,7 @@ export default {
   "description": "Extraction of Nasal Turbinate, Open Approach",
   "price": "$23.85",
   "imgUrl": "/images/t1.jpg",
-  "category": "Tires",
+  "category": "tires",
   "rating": 3,
   "reviews": 5
 }, {
@@ -14,7 +14,7 @@ export default {
   "description": "Insert Spacer in R Finger Phalanx Jt, Perc Endo",
   "price": "$0.63",
    "imgUrl": "/images/t2.jpg",
-  "category": "Tires",
+  "category": "tires",
   "rating": 3,
   "reviews": 4
 }, {
@@ -23,7 +23,7 @@ export default {
   "description": "Excision of Pudendal Nerve, Percutaneous Approach, Diagn",
   "price": "$79.50",
    "imgUrl": "/images/t3.jpg",
-  "category": "Tires",
+  "category": "tires",
   "rating": 1,
   "reviews": 1
 }, {
@@ -32,7 +32,7 @@ export default {
   "description": "Repair Prepuce, Percutaneous Endoscopic Approach",
   "price": "$19.76",
    "imgUrl": "/images/t4.jpg",
-  "category": "Tires",
+  "category": "tires",
   "rating": 3,
   "reviews": 4
 }, {
@@ -41,7 +41,7 @@ export default {
   "description": "Repair Right Pleura, Percutaneous Approach",
   "price": "$10.39",
    "imgUrl": "/images/t5.jpg",
-  "category": "Tires",
+  "category": "tires",
   "rating": 1,
   "reviews": 4
 }, {
@@ -49,8 +49,8 @@ export default {
   "name": "Trippledex",
   "description": "Bypass Left Kidney Pelvis to Ileum, Perc Endo Approach",
   "price": "$76.24",
-  "imgUrl": "http://dummyimage.com/105x202.jpg/5fa2dd/ffffff",
-  "category": "Fix San",
+  "imgUrl": "/images/b1.jpg",
+  "category": "bumpers",
   "rating": 1,
   "reviews": 4
 }, {
@@ -58,8 +58,8 @@ export default {
   "name": "Flowdesk",
   "description": "Excision of Right Inguinal Lymphatic, Open Approach",
   "price": "$29.81",
-  "imgUrl": "http://dummyimage.com/250x156.bmp/dddddd/000000",
-  "category": "Zaam-Dox",
+   "imgUrl": "/images/b2.jpg",
+  "category": "bumpers",
   "rating": 3,
   "reviews": 3
 }, {
@@ -67,8 +67,8 @@ export default {
   "name": "Temp",
   "description": "Dilate L Int Iliac Art, Bifurc, w 3 Drug-elut, Perc",
   "price": "$2.07",
-  "imgUrl": "http://dummyimage.com/181x234.jpg/ff4444/ffffff",
-  "category": "Trippledex",
+   "imgUrl": "/images/b3.jpg",
+  "category": "bumpers",
   "rating": 3,
   "reviews": 5
 }, {
@@ -76,8 +76,8 @@ export default {
   "name": "Ventosanzap",
   "description": "Drainage of Right Lower Lung Lobe, Via Opening",
   "price": "$57.59",
-  "imgUrl": "http://dummyimage.com/240x105.jpg/dddddd/000000",
-  "category": "Temp",
+   "imgUrl": "/images/b4.jpg",
+  "category": "bumpers",
   "rating": 2,
   "reviews": 4
 }, {
@@ -85,8 +85,8 @@ export default {
   "name": "Aerified",
   "description": "Removal of Infusion Device from Mediastinum, Open Approach",
   "price": "$89.68",
-  "imgUrl": "http://dummyimage.com/166x189.png/5fa2dd/ffffff",
-  "category": "Otcom",
+   "imgUrl": "/images/b5.jpg",
+  "category": "bumpers",
   "rating": 2,
   "reviews": 1
 }, {

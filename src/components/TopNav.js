@@ -10,7 +10,9 @@ function SubHeader(props){
 					<li><a href="carwheels.html">Car wheels</a></li>
 					<li><a href="carbumpers.html">car bumpers</a></li>
 					<li><a href="caradsystem.html">car audiosystem</a></li>
-					<li><a href="truckbumpers.html">Truck bumpers</a></li>
+					<li>
+						<Link to="/products/bumpers">Truck bumpers</Link>
+					</li>
 					<li>
 						<Link to="/contact">Feedback</Link>
 					</li>     

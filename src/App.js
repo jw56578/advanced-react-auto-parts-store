@@ -21,6 +21,18 @@ import {
 function App(props) {
 	var content  = "";
 	content = 	<div><ImageSlider /><Products /></div>;
+
+	const ProductsByCategory = (myprops) => {
+		return (
+			<Products 
+				{...myprops} //take every property from this object and send it in as a prop
+				//store = {myprops.store} whatever ={myprops.whatever}
+				{...props} //take every property from this object and send it in as a prop
+			/>
+		);
+	}
+
+		
 	return (
 		<div className="App">
 	    <BrowserRouter>
@@ -37,6 +49,7 @@ function App(props) {
 								<Switch>
 									<Route exact path="/" component={Home}/>
 									<Route path="/contact" component={Contact}/>
+									<Route path="/products/:category" component={ProductsByCategory}/>
 									<Route render={() => <h2>Not Found!</h2>} />
 								</Switch>
 							</div>

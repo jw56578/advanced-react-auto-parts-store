@@ -1,33 +1,33 @@
 import React, { Component } from 'react';
 import ProductDetail from './ProductDetail';
 
-function SubHeader(){
+function Products(props){
+	debugger;
+	if(!props.store){
+		return null;
+	}
+	var products = props.store.products.filter(function(prod){
+		return prod.category === props.match.params.category;
+	});
+
+	products = products.map(function(prod){
+		return <ProductDetail product={prod} />;
+	});
   return(
     	<div className="products-box">
 					<div className="products">
 						<h5><span>FEATURED</span> PRODUCTS</h5>
 						<div className="section group">
-							<ProductDetail />
-							<ProductDetail />
-							<ProductDetail />
-							<ProductDetail />
-							<ProductDetail />
+							{products}
 						</div>
 					</div>
 					<div className="products products-secondbox">
 						<h5><span>Our</span> Specials</h5>
 						<div className="section group">
-							<ProductDetail />
-							<ProductDetail />
-							<ProductDetail />
-							<ProductDetail />
-							<ProductDetail />
-              <ProductDetail />
-							<ProductDetail />
-							<ProductDetail />
+								{products}
 						</div>
 					</div>
 				</div>
   );
 }
-export default SubHeader;
+export default Products;
